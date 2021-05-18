@@ -28,11 +28,20 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-				?>
+				$title = get_the_title();
+				$nom = substr($title, 0,7);
 
-				<p><?php the_title();?></p>
+				$temps = substr($title, -5);
+				$typeCours = get_field('type_de_cours');
 
 				
+				?>
+				<p><?php echo $typeCours?></p>
+				<p><?php echo $nom?></p>
+				<p><?php echo $temps?></p>
+
+
+	
 			<?php
 			endwhile;
 
