@@ -31,7 +31,7 @@ get_header();
 				the_post();
 				$title = get_the_title();
 				$nom = substr($title, 0,7);
-				$temps = substr($title, -5);
+				$temps = substr($title, -6);
 				$typeCours = get_field('type_de_cours');
 				$session = substr($title, 4,1);	
 				
@@ -43,7 +43,7 @@ get_header();
 				<section id = "<?php echo $typeCours?>" >
 				<?php endif?>
 
-				<article id = "<?php echo $typeCours?>" >
+				<article class = "<?php echo $typeCours?>" >
 				<p><?php echo $typeCours?></p>
 				<p><?php echo $nom?></p>
 				<p><?php echo $temps?></p>
