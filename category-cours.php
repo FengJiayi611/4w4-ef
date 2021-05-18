@@ -39,7 +39,7 @@ get_header();
 					if("XXXXXX" != $precedent):?>
 			</section>
 			<?php endif?>
-				<?php echo $session?> 
+
 				<section id = "<?php echo $typeCours?>" >
 				<?php endif?>
 
