@@ -1271,11 +1271,19 @@ section #Projets {
   background-color: #339933;
 }
 
-#Jeu .Jeu:nth-of-type(3) {
+#Spécifique .Jeu:nth-of-type(3) {
   border: 1px dotted #feb602;
 }
 
-#Jeu .Jeu:nth-of-type(2) {
+#Spécifique .Jeu:nth-of-type(4) {
+  border: 1px dotted #feb602;
+}
+
+#Spécifique .Jeu:nth-of-type(5) {
+  border: 1px dotted #feb602;
+}
+
+#Spécifique .Web:nth-of-type(6) {
   border: 1px dotted #feb602;
 }
 

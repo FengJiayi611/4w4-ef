@@ -169,14 +169,21 @@ section #Projets{
     background-color: rgb(51, 153, 51);
    }
 
- #Jeu{
+ #Spécifique{
         .Jeu:nth-of-type(3){
            border: 1px dotted rgb(254, 182, 2);
         }
-        .Jeu:nth-of-type(2){
+        .Jeu:nth-of-type(4){
+            border: 1px dotted rgb(254, 182, 2);
+        }
+        .Jeu:nth-of-type(5){
+            border: 1px dotted rgb(254, 182, 2);
+        }
+        .Web:nth-of-type(6){
             border: 1px dotted rgb(254, 182, 2);
         }
 
     }
 
+ 
 
