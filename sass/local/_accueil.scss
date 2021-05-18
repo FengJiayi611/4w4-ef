@@ -111,8 +111,9 @@ Liste des blocs de cours par type_de_cours
      section{
          display: flex;
          flex-direction: row;
-         flex-wrap: wrap;
-        
+         flex-wrap: nowrap;
+
+
     article{
         border: 1px solid red;
         display: flex;
@@ -120,6 +121,9 @@ Liste des blocs de cours par type_de_cours
         justify-content: space-between;
         align-items:center;
         width: 25%;
+        margin: 10px;
+
+        
         p{
             margin: .3rem;
             font-size: 1rem;
@@ -132,4 +136,10 @@ Liste des blocs de cours par type_de_cours
         }
     }
 }
+}
+
+section #Spécifique{
+    article{
+        width: 1000px;
+    }
 }

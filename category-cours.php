@@ -40,7 +40,7 @@ get_header();
 			</section>
 			<?php endif?>
 				<?php echo $session?> 
-				<section>
+				<section id = "<?php echo $typeCours?>" >
 				<?php endif?>
 
 				<article>

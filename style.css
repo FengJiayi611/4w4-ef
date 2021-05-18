@@ -1223,7 +1223,7 @@ Liste des blocs de cours par type_de_cours
 .list-cours section {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .list-cours section article {
@@ -1233,6 +1233,7 @@ Liste des blocs de cours par type_de_cours
   justify-content: space-between;
   align-items: center;
   width: 25%;
+  margin: 10px;
 }
 
 .list-cours section article p {
@@ -1244,6 +1245,10 @@ Liste des blocs de cours par type_de_cours
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
+}
+
+section #Spécifique article {
+  width: 1000px;
 }
 
 /* local carrousel
