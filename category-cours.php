@@ -43,7 +43,7 @@ get_header();
 				<section id = "<?php echo $typeCours?>" >
 				<?php endif?>
 
-				<article>
+				<article id = "<?php echo $typeCours?>" >
 				<p><?php echo $typeCours?></p>
 				<p><?php echo $nom?></p>
 				<p><?php echo $temps?></p>
