@@ -22,30 +22,40 @@ get_header();
 				?>	
 			
 			</header><!-- .page-header -->
-
+			<section class="list-cours">
 
 			<?php
+			 $precedent = "XXXXXX";
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
 				$title = get_the_title();
 				$nom = substr($title, 0,7);
-
 				$temps = substr($title, -5);
 				$typeCours = get_field('type_de_cours');
-
+				$session = substr($title, 4,1);	
 				
-				?>
+				if($session != $precedent):
+					if("XXXXXX" != $precedent):?>
+			</section>
+			<?php endif?>
+				<?php echo $session?> 
+				<section>
+				<?php endif?>
+
+				<article>
 				<p><?php echo $typeCours?></p>
 				<p><?php echo $nom?></p>
 				<p><?php echo $temps?></p>
-
+				</article>
 
 	
 			<?php
-			endwhile;
+			$precedent = $session;
+			endwhile;?>
+			</section>
 
-			endif; 
+			<?php endif; 
 		?>
 	</main><!-- #main -->
 

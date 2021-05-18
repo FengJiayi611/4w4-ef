@@ -1215,6 +1215,37 @@ Liste des blocs de cours par type_de_cours
   height: 10vh;
 }
 
+.list-cours {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-cours section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.list-cours section article {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+
+.list-cours section article p {
+  margin: .3rem;
+  font-size: 1rem;
+}
+
+.list-cours section article a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* local carrousel
 --------------------------------------------- */
 .carrousel {
