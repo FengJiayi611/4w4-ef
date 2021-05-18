@@ -9,36 +9,34 @@
  
 get_header();
 ?>
-///////////////////////////////////////////////// CATEGORY.PHP
+///////////////////////////////////////////////// CATEGORY-COURS.PHP
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php
-				// echo (is_category('Projets')? '### oui projets ###': '### non ###');
-				// the_archive_title( '<h1 class="page-title">', '</h1>' );
-				echo '<h1 class="page-title">' . single_cat_title( '', false ) . '</h1>';
+				the_archive_title('<h1 class="page-title>','</h1>');
 				the_archive_description( '<div class="archive-description">', '</div>' );
 		
 				?>	
 			
 			</header><!-- .page-header -->
-			<section class="galerie">
+
+
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
+				?>
 
+				<p><?php the_title();?></p>
 
+				
+			<?php
+			endwhile;
 
-				get_template_part( 'template-parts/content', 'galerie' );
-
-			endwhile;?>
-
-			</section>
-
-		<?php endif; 
+			endif; 
 		?>
 	</main><!-- #main -->
 
