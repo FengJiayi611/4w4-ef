@@ -169,3 +169,14 @@ section #Projets{
     background-color: rgb(51, 153, 51);
    }
 
+ #Jeu{
+        .Jeu:nth-of-type(3){
+           border: 1px dotted rgb(254, 182, 2);
+        }
+        .Jeu:nth-of-type(2){
+            border: 1px dotted rgb(254, 182, 2);
+        }
+
+    }
+
+   

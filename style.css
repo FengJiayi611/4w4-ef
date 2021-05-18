@@ -1271,6 +1271,14 @@ section #Projets {
   background-color: #339933;
 }
 
+#Jeu .Jeu:nth-of-type(3) {
+  border: 1px dotted #feb602;
+}
+
+#Jeu .Jeu:nth-of-type(2) {
+  border: 1px dotted #feb602;
+}
+
 /* local carrousel
 --------------------------------------------- */
 .carrousel {
